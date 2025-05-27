@@ -125,7 +125,7 @@ if (!$result['valid']) {
   $rejectionReason = 'ไม่พบเลขอ้างอิงในสลิป';
 } elseif ($isDuplicate) {
   $rejectionReason = 'ใบเสร็จนี้ถูกใช้ไปแล้ว';
-} elseif (stripos($bankAccountTH, 'ธนกฤต') === false && stripos($bankAccountTH2, '') === false) {
+} elseif (stripos($bankAccountTH, 'พุฒิพงศ์') === false && stripos($bankAccountTH2, 'พุฒิพงศ์') === false) {
   $rejectionReason = 'บัญชีปลายทางไม่ตรงกับชื่อที่กำหนด';
 }
 
